@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tablylink/utils/app_theme.dart';
 import 'package:tablylink/utils/databasehelper.dart';
-import 'login_screen.dart';
+import 'package:tablylink/screens/login_screen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});

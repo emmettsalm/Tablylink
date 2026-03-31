@@ -6,7 +6,4 @@ class Session {
   AppUser? currentUser;
   bool get isLoggedIn => currentUser != null;
 
-  void logout() {
-    currentUser = null;
-  }
 }

@@ -7,6 +7,7 @@ import 'main_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
+
   @override
   State<LoginScreen> createState() => _LoginScreenState();
 }
@@ -37,7 +38,9 @@ class _LoginScreenState extends State<LoginScreen> {
         _emailController.text.trim(),
         _passwordController.text,
       );
+
       if (!mounted) return;
+
       if (user == null) {
         setState(() => _isLoading = false);
         ScaffoldMessenger.of(context).showSnackBar(
@@ -50,8 +53,8 @@ class _LoginScreenState extends State<LoginScreen> {
       }
 
       Session.instance.currentUser = user;
-      if (!mounted) return;
 
+      if (!mounted) return;
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const MainScreen()),

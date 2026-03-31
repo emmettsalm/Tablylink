@@ -9,6 +9,7 @@ class AppTheme {
   static const Color textSecondary = Color(0xFF757575); //สีเทา
   static const Color successColor = Color(0xFF4CAF50); //สีเขียว
   static const Color unsuccessColor = Colors.red;
+  static const Color starColor = Colors.yellow;
 
   static ThemeData get theme => ThemeData(
     primaryColor: primaryColor,
